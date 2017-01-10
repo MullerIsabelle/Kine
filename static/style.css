@@ -1,0 +1,323 @@
+/* Police : Georgia */
+
+
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Lato Light';
+  src: url('fonts/Lato-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Perpetua Bold';
+  src: url('fonts/Perpetua-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Merriweather Bold Italic';
+  src: url('fonts/Merriweather-BoldItalic.ttf');
+}
+
+html {
+  font-family: 'Lato Light';
+  font-size: 1.3em;
+}
+
+html body a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu a {
+  font-size: 1.5em;
+}
+
+#lessons a {
+  font-weight: bold;
+}
+
+#lessons a.active {
+  color: #a997c8;
+}
+
+html nav.menu li.logo a {
+  content: url(images/logo.png);
+}
+
+.menu .active {
+  color: #5b4482;
+}
+
+html nav.menu ul {
+  position: absolute;
+  margin: auto;
+  padding-left: 0;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+html nav.menu li {
+  padding: 5px;
+  list-style: none;
+}
+
+html nav.menu li a {
+  color: white;
+  font-family: 'Lato Bold';
+}
+
+nav.sticky ul {
+  background-color: #FFF;
+  border-bottom: solid 2px #a997c8;
+  margin: 0;
+  position: fixed!important;
+  top: 0;
+  height: 50px;
+  z-index: 10;
+}
+
+html nav.menu.sticky li.logo {
+  padding: 0;
+}
+html nav.menu.sticky li.logo a {
+  content: '';
+  display: none;
+}
+
+nav.sticky ul li a {
+  color: #a997c8;
+}
+
+nav.sticky ul li a:hover {
+  color: #5b4482;
+}
+
+#lessons nav li {
+  list-style: none;
+  font-family: 'Lato Bold';
+  text-transform: uppercase;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-sizing: border-box;
+  min-height: 100%;
+  margin: 0;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: url("images/background.jpg") no-repeat center/cover;
+  box-sizing: border-box;
+  min-height: 100vh;
+  text-align: center;
+}
+
+section {
+  padding-bottom: 50px;
+}
+
+section:not(#home) {
+  padding-top: 50px;
+}
+
+#lessons img, #about img, #pilates img, #rent img {
+  padding-top: 100px;
+}
+
+#lessons, #about, #pilates, #rent, #faq {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#contact {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.slick {
+  max-width: 40%;
+  max-height: 40%;
+  margin-left: 100px;
+}
+
+.slick-dots {
+  position: relative;
+}
+
+#home h1, #home h2, #home h3, #home h4 {
+  color: white;
+  font-family: 'Perpetua Bold';
+}
+
+#home h1 {
+  font-size: 5em;
+  margin: 0;
+  margin-top: 150px;
+  text-transform: uppercase;
+}
+
+#home h2 {
+  font-size: 3.7em;
+  color: white;
+  text-transform: initial;
+  margin: 0;
+}
+
+#home h3 {
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 100px;
+}
+
+#home h3::after {
+  content: '';
+  border: 0;
+}
+
+#home h4 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+  color: #a997c8;
+  text-transform: uppercase;
+  font-family: 'Lato Bold';
+}
+
+#lessons section, #about, #pilates, #rent, #faq {
+  display: flex;
+}
+
+#lessons nav {
+  width: 30%;
+}
+
+#contact section {
+  display: flex;
+}
+
+#lessons section div, #about div, #pilates div, #rent div, #contact div {
+  flex: 1 50%;
+}
+
+#lessons dl {
+  display: flex;
+  flex-direction: column;
+}
+
+.lesson-content {
+  display: flex;
+}
+
+.lesson-content article {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#faq section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#faq article {
+  flex: 0 50%;
+}
+
+#lessons h2, #lessons p.intro {
+  text-align: center;
+}
+
+h3 {
+  position: relative;
+  padding-bottom: 5px;
+  font-size: 2em;
+  font-family: 'Merriweather Bold Italic';
+}
+
+.pipe::after {
+  content: ' | ';
+}
+
+#lessons nav {
+  width: 30%;
+}
+
+h3:not(.faq-title)::after {
+  content: "";
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: 30px;
+  border-bottom: 4px solid #a997c8;
+}
+
+h3.soft-gym-title::after {
+  bottom: -5px;
+}
+
+h3.contact-title::after {
+  content: "";
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: 30px;
+  border-bottom: 4px solid white;
+}
+
+.right-content {
+  margin-left: 50px;
+}
+
+.rdv a {
+  padding-left: 5px;
+}
+
+img {
+  max-height: 400px;
+}
+
+#contact, #contact a, #contact h2 {
+  background: #a997c8;
+  color: white;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dt::after {
+  content: ' :';
+}
+
+#contact input, #contact textarea {
+  padding: 5px;
+  margin: 5px;
+  width: 50%;
+  font-size: 0.7em;
+}
+
+[type="submit"] {
+  background: transparent;
+  border: solid 2px white;
+  color: white;
+}
