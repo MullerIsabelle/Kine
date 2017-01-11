@@ -23,7 +23,7 @@
 
 html {
   font-family: 'Lato Light';
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 html body a {
@@ -32,7 +32,7 @@ html body a {
 }
 
 .menu a {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 #lessons a {
@@ -165,21 +165,21 @@ section:not(#home) {
 }
 
 #home h1 {
-  font-size: 5em;
+  font-size: 4em;
   margin: 0;
   margin-top: 150px;
   text-transform: uppercase;
 }
 
 #home h2 {
-  font-size: 3.7em;
+  font-size: 2.7em;
   color: white;
   text-transform: initial;
   margin: 0;
 }
 
 #home h3 {
-  font-size: 3em;
+  font-size: 2.5em;
   text-transform: uppercase;
   margin: 0;
   margin-top: 100px;
@@ -192,11 +192,11 @@ section:not(#home) {
 
 #home h4 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #a997c8;
   text-transform: uppercase;
   font-family: 'Lato Bold';
@@ -248,7 +248,7 @@ h2 {
 h3 {
   position: relative;
   padding-bottom: 5px;
-  font-size: 2em;
+  font-size: 1.7em;
   font-family: 'Merriweather Bold Italic';
 }
 
