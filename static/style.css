@@ -59,6 +59,11 @@ html nav.menu li.logo a {
   height: 8em;
 }
 
+html nav.menu li.logo a::after {
+  content: url(images/logo.png);
+  height: 8em;
+}
+
 .menu .active {
   color: #5b4482;
 }
@@ -264,7 +269,7 @@ h2 {
 #lessons dl ul {
   padding: 0;
   list-style: none;
-  
+
 }
 
 .lesson-content {
@@ -339,10 +344,6 @@ h3.contact-title::after {
   position: absolute;
   width: 30px;
   border-bottom: 4px solid white;
-}
-
-.right-content {
-  margin-left: 50px;
 }
 
 .rdv a {
