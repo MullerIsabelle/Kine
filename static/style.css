@@ -270,8 +270,8 @@ h2 {
 
 #lessons dt {
   break-after: avoid-column;
-  page-break-after: avoid-column;
-  -webkit-column-break-after: avoid-column;
+  page-break-after: avoid;
+  -webkit-column-break-after: avoid;
 }
 
 #lessons dl dd {
