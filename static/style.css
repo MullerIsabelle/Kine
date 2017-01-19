@@ -170,7 +170,8 @@ section:not(#home) {
 }
 
 .slick {
-  max-width: 50%
+  max-width: 50%;
+  align-self: center;
   /*max-height: 40%;*/
   /*margin-left: 100px;*/
 }
@@ -255,10 +256,6 @@ h2 {
   flex: 1 50%;
 }
 
-#lessons nav {
-  width: 30%;
-}
-
 #contact section {
   display: flex;
 }
@@ -268,9 +265,13 @@ h2 {
 }
 
 #lessons dl {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  columns: 2;
+}
+
+#lessons dt {
+  break-after: avoid-column;
+  page-break-after: avoid-column;
+  -webkit-column-break-after: avoid-column;
 }
 
 #lessons dl dd {
@@ -289,20 +290,15 @@ h2 {
   flex-direction: column;
 }
 
-.lesson-content nav {
-  display: flex;
-  flex: 1;
-}
-
 .lesson-content nav ul {
   padding-left: 0;
-  justify-content: center;
-  flex: 1 100%;
+  display: flex;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 .lesson-content nav ul li {
-  margin: 0.5em 0;
+  margin: 0 0.5em;
 }
 
 .lesson-content article {
