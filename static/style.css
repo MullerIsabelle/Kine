@@ -59,11 +59,6 @@ html nav.menu li.logo a {
   height: 8em;
 }
 
-html nav.menu li.logo a::after {
-  content: url(images/logo.png);
-  height: 8em;
-}
-
 .menu .active {
   color: #5b4482;
 }
@@ -93,7 +88,7 @@ html nav.menu li {
 
 html nav.menu li a {
   color: white;
-  /*font-family: 'Lato Bold';*/
+  font-family: 'Lato Bold';
   text-transform: uppercase;
 }
 
@@ -154,7 +149,7 @@ body {
 }
 
 section {
-  padding-bottom: 50px;
+  /*padding-bottom: 50px;*/
 }
 
 section:not(#home) {
@@ -162,7 +157,7 @@ section:not(#home) {
 }
 
 #lessons img, #about img, #pilates img, #rent img {
-  padding-top: 100px;
+  /*padding-top: 100px;*/
 }
 
 #lessons, #about, #pilates, #rent, #faq {
@@ -178,6 +173,10 @@ section:not(#home) {
   max-width: 50%
   /*max-height: 40%;*/
   /*margin-left: 100px;*/
+}
+
+.slick-prev, .slick-next {
+  display: none!important;
 }
 
 .slick-dotted.slick-slider {
@@ -239,8 +238,21 @@ h2 {
 #lessons section, #about, #pilates, #rent, #faq {
   box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  margin: 2em 0;
+  /*flex-wrap: wrap;
+  align-items: center*/;
+}
+
+.right-content {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+#pure-pilates {
+}
+
+#pure-pilates > div {
+  flex: 1 50%;
 }
 
 #lessons nav {
@@ -274,10 +286,19 @@ h2 {
 
 .lesson-content {
   display: flex;
+  flex-direction: column;
+}
+
+.lesson-content nav {
+  display: flex;
+  flex: 1;
 }
 
 .lesson-content nav ul {
   padding-left: 0;
+  justify-content: center;
+  flex: 1 100%;
+  flex-wrap: wrap;
 }
 
 .lesson-content nav ul li {
@@ -295,12 +316,15 @@ h2 {
 }
 
 #faq section {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
 }
 
 #faq article {
+  box-sizing: border-box;
   flex: 0 50%;
+  padding: 20px;
 }
 
 #lessons h2, #lessons p.intro {
@@ -308,7 +332,6 @@ h2 {
 }
 
 h3 {
-  position: relative;
   padding-bottom: 5px;
   font-size: 2em;
   font-family: 'Merriweather Bold Italic';
@@ -323,13 +346,11 @@ h3 {
 }
 
 h3:not(.faq-title)::after {
+  background: #a997c8;
   content: "";
-  height: 1px;
-  left: 0;
-  bottom: 0;
-  position: absolute;
+  display: block;
+  height: 4px;
   width: 30px;
-  border-bottom: 4px solid #a997c8;
 }
 
 h3.soft-gym-title::after {
@@ -352,6 +373,7 @@ h3.contact-title::after {
 
 img {
   /*max-height: 400px;*/
+  /*width: 100%;*/
 }
 
 #contact, #contact a, #contact h2 {
@@ -379,3 +401,63 @@ dt::after {
   border: solid 2px white;
   color: white;
 }
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup-overlay.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  color: black;
+  position: relative;
+  transition: all 5s ease-in-out;
+
+}
+
+#contact .popup a {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #a997c8;
+  content: '&times;';
+  background: none;
+}
+
+.popup a:hover {
+  color: #06D85F;
+}
+
+.popup p {
+  max-height: 30%;
+  overflow: auto;
+}
+
+/*@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}*/
