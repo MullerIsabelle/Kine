@@ -148,20 +148,13 @@ body {
   text-align: center;
 }
 
-section {
-  /*padding-bottom: 50px;*/
-}
-
-section:not(#home) {
-  /*padding-top: 50px;*/
-}
-
-#lessons img, #about img, #pilates img, #rent img {
-  /*padding-top: 100px;*/
-}
-
 #lessons, #about, #pilates, #rent, #faq {
   padding: 2em;
+  min-height: 100vh;
+}
+
+#lessons section {
+  min-height: 100vh;
 }
 
 #contact {
@@ -169,7 +162,7 @@ section:not(#home) {
   padding-right: 100px;
 }
 
-.slick {
+.images {
   max-width: 50%;
   align-self: center;
   /*max-height: 40%;*/
@@ -398,7 +391,7 @@ dt::after {
   color: white;
 }
 
-.popup-overlay {
+/* .popup-overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -449,7 +442,7 @@ dt::after {
   overflow: auto;
 }
 
-/*@media screen and (max-width: 700px){
+@media screen and (max-width: 700px){
   .box{
     width: 70%;
   }

@@ -48,13 +48,14 @@ $(document).ready(function() {
 
   $('.popup-overlay a').click(function(e) {
     e.preventDefault();
-    $('.popup-overlay').removeClass('show');
+    //$('.popup-overlay').removeClass('show');
   })
 
   $("form").submit(function(e) {
     e.preventDefault();
     $.post($(this).attr('action'), $(this).serialize()).done(function(response) {
-      $('.popup-overlay').addClass('show');
+      //$('.popup-overlay').addClass('show');
+      alert('Votre message a été envoyé, nous vous répondrons le plus rapidement possible !');
       $(this).find('input').val('');
     });
   });
