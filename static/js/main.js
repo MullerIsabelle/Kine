@@ -51,37 +51,15 @@ $(document).ready(function() {
     //$('.popup-overlay').removeClass('show');
   })
 
-  /*$("form").submit(function(e) {
+  $("form").submit(function(e) {
     e.preventDefault();
-    $.post(
-    {
-      type: "POST",
-      url: "https://mandrillapp.com/api/1.0/messages/send.json",
-      data: {
-        'key': '2S33FnYFBIKoe14Ylh4FZg',
-        'message': {
-          'from_email': email,
-          'from_name': fullname,
-          'subject': 'Website Contact Form Submission',
-          'text': msg,
-          'to': [
-          {
-            'email': 'miniclem69@gmail.com',
-            'name': 'Clément Plasse',
-            'type': 'to'
-          }]
-        }
-        }
-      })
+    $.post($(this).attr('action'), $(this).serialize())
       .done(function(response) {
         alert('Votre message a été envoyé, nous vous répondrons le plus rapidement possible !');
-        $("#name").val(''); // reset field after successful submission
-        $("#email").val(''); // reset field after successful submission
-        $("#msg").val(''); // reset field after successful submission
+        $("form input, form textarea").val(''); // reset field after successful submission
       })
       .fail(function(response) {
         alert('Erreur lors de lʼenvoi du message.');
       });
-      return false; // prevent page refresh
-  });*/
+  });
 });
