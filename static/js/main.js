@@ -53,7 +53,12 @@ $(document).ready(function() {
 
   $("form").submit(function(e) {
     e.preventDefault();
-    $.post($(this).attr('action'), $(this).serialize())
+    $.ajax({
+      url: "https://formspree.io/miniclem69@gmail.com",
+      method: "POST",
+      data: $(this).serialize(),
+      dataType: "json"
+    })
       .done(function(response) {
         alert('Votre message a été envoyé, nous vous répondrons le plus rapidement possible !');
         $("form input, form textarea").val(''); // reset field after successful submission
