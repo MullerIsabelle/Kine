@@ -51,7 +51,7 @@ $(document).ready(function() {
     //$('.popup-overlay').removeClass('show');
   })
 
-  $("form").submit(function(e) {
+  /*$("form").submit(function(e) {
     e.preventDefault();
     $.ajax({
       url: "https://formspree.io/miniclem69@gmail.com",
@@ -66,5 +66,5 @@ $(document).ready(function() {
       .fail(function(response) {
         alert('Erreur lors de lʼenvoi du message.');
       });
-  });
+  });*/
 });
